@@ -21,9 +21,9 @@ module JasmineRails
       files = Jasmine::Core.js_files
       if params[:console]
         files << 'jasmine-console-reporter.js'
+        files << 'jasmine-console-reporter-overrides.js'
+        files << 'jasmine-phantomjs-reporter.js'
       end
-      files << 'jasmine-console-reporter-overrides.js'
-      files << 'jasmine-phantomjs-reporter.js'
       files << 'jasmine-boot.js'
       files << 'jasmine-specs.js'
       files
